@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-firstapp-f156d": {
+      "hosting": {
+        "my-app": [
+          "angular-firstapp-f156d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-firstapp-f156d"
+  }
+}
