@@ -14,6 +14,10 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
+import { CategoryComponent } from './category/category.component';
+import { AboutComponent } from './about/about.component';
+import { LatestNewComponent } from './latest-new/latest-new.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
@@ -22,9 +26,10 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: MainComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent }
+      { path: 'category', component: CategoryComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'latestnews', component: LatestNewComponent },
+      { path: 'contact', component: ContactComponent }
     ])
   ],
   declarations: [
@@ -37,7 +42,11 @@ import { FooterComponent } from './footer/footer.component';
     ShippingComponent,
     HeaderComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    CategoryComponent,
+    AboutComponent,
+    LatestNewComponent,
+    ContactComponent
   ],
   bootstrap: [AppComponent]
 })
